@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    background-image: url('food.jpg'); /* Ensure this is a high-quality image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: rgba(14, 13, 13, 0.192); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Glass blur effect */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for glass effect */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Black for better contrast */
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #ffffff; /* Darker gray for better readability */
+    margin-bottom: 30px;
+  }
+  
+  /* Google Sign-In Button Styling */
+  .g_id_signin {
+    margin: 0 auto;
+    display: inline-block;
+  }
+  
+  /* Cooking-themed decorative elements */
+  .container::before {
+    content: ''; /* Cooking emoji */
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .container::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #c0392b, #e67e22); /* Gradient inspired by cooking colors */
+    margin-top: 30px;
+    border-radius: 2px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
